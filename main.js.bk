@@ -66,15 +66,14 @@ var screenshotUrl = 'http://google.com/';
 var screenshotNow = new Date();
 var screenshotDateTime = screenshotNow.getFullYear() + pad(screenshotNow.getMonth() + 1) + pad(screenshotNow.getDate()) + '-' + pad(screenshotNow.getHours()) + pad(screenshotNow.getMinutes()) + pad(screenshotNow.getSeconds());
 
-// if (casper.cli.args.length < 1) {
-//   casper
-//     .echo("Usage: $ casperjs screenshots.js http://example.com")
-//     .exit(1)
-//   ;
-// } else {
-//   screenshotUrl = casper.cli.args[0];
-// }
-
+if (casper.cli.args.length < 1) {
+  casper
+    .echo("Usage: $ casperjs screenshots.js http://example.com")
+    .exit(1)
+  ;
+} else {
+  screenshotUrl = casper.cli.args[0];
+}
 
 casper.start(screenshotUrl, function() {
   this.echo('Current location is ' + this.getCurrentUrl(), 'info');

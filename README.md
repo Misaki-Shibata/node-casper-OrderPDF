@@ -30,6 +30,9 @@ backgroundでサーバーを立ち上がっている状態で
 例) casperjs main.js http://yahoo.co.jp
 ```
 
+ブラウザアクセス
+http://localhost:8877/writetest2.html
+
 ### メモ
 - screenshots/yyyymmdd-hhmmss のディレクトリにスクリーンショットが作成される。
 - htdocsでpdfにする元のhtmlを配置しブラウザからアクセスする。
