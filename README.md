@@ -30,8 +30,11 @@ backgroundでサーバーを立ち上がっている状態で
 例) casperjs main.js http://yahoo.co.jp
 ```
 
-ブラウザアクセス
+ブラウザアクセス  
 http://localhost:8877/writetest2.html
+
+デモ画像
+![デモ画像](screenshots/demo.png?raw=true "デモ画像")
 
 ### メモ
 - screenshots/yyyymmdd-hhmmss のディレクトリにスクリーンショットが作成される。
